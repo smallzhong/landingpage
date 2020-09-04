@@ -81,6 +81,7 @@ export default function Home() {
                         </Paragraph>
                         <ParagraphAlt>
                             <p>You may want to read my <AAlt href="#">informal profile (WIP)</AAlt>.</p>
+                            <p>Temporary link to my old blog: <AAlt href="https://legacy.lightquantum.me">Old blog</AAlt>.</p>
                         </ParagraphAlt>
                     </ParagraphWrapper>
                 </Container>
