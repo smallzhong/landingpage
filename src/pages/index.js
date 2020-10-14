@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect, useState} from "react"
 import {Helmet} from "react-helmet";
 import tw from "twin.macro"
 
@@ -31,7 +31,10 @@ export default function Home() {
         "Entering M class planet GARDEN's orbit."
     ];
     console.log(consoleText.join("\n"));
-    const domainText = '{window.location.hostname}';
+    const [emailAddress, setEmailAddress] = useState("");
+    useEffect(() => {
+        setEmailAddress(`self@${window.location.hostname}`);
+    }, [])
     return (
         <>
             <Root>
@@ -74,7 +77,7 @@ export default function Home() {
                         </Paragraph>
                         <Paragraph>
                             <p>I love to connect with people.</p>
-                            <p>Email: self@<Pre>{domainText}</Pre></p>
+                            <p>Email: <A href={`mailto:${emailAddress}`}>{emailAddress}</A></p>
                             <A href="https://twitter.com/LightQuantumhah" target="_blank"
                                rel="noopener">Twitter</A> | <A
                             href="https://t.me/lightquantum" target="_blank" rel="noopener">Telegram</A>
