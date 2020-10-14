@@ -11,6 +11,7 @@ import {
     SummaryTitleWrapper
 } from "../styles";
 import {FormalProfile} from "../components/formal-profile";
+import {InformalProfile} from "../components/informal-profile";
 
 export default function Home() {
     const consoleText = [
@@ -19,7 +20,9 @@ export default function Home() {
         "Propulsion system offline.",
         "Entering M class planet GARDEN's orbit."
     ];
-    console.log(consoleText.join("\n"));
+    useEffect(() => console.log(consoleText.join("\n")), []);
+    const [formal, setFormal] = useState(true);
+    const toggleProfile = () => setFormal(!formal);
     return (
         <>
             <Root>
@@ -46,7 +49,10 @@ export default function Home() {
                         </SummaryContent>
                     </SummaryContainer>
                     <ParagraphWrapper>
-                        <FormalProfile />
+                        {formal ?
+                            <FormalProfile toggleProfile={toggleProfile}/> :
+                            <InformalProfile toggleProfile={toggleProfile}/>
+                        }
                     </ParagraphWrapper>
                 </Container>
             </Root>

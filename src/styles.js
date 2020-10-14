@@ -14,7 +14,7 @@ export const SummarySubtitleAp = tw(SummarySubtitle)`md:ml-1`
 export const AvatarWrapper = tw.div`flex-shrink-0`
 export const Avatar = tw.img`h-16 w-16 rounded-full shadow-lg`
 
-export const ParagraphWrapper = tw.div`px-6 pb-6 mx-auto pt-2 md:pt-4`
+export const ParagraphWrapper = tw.div`px-6 pb-6 mx-auto pt-2 md:pt-4 max-w-lg md:max-w-xl`
 export const Paragraph = styled.div(({alternative}) => [
     tw`mx-auto px-2 pb-4 leading-relaxed`,
     !alternative ? tw`text-sm md:text-base text-gray-700 dark:text-gray-200` : tw`text-xs md:text-sm text-gray-600 dark:text-gray-300 pt-2`

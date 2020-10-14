@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {A, Paragraph} from "../styles";
 
-export const FormalProfile = () => {
+export const FormalProfile = ({toggleProfile}) => {
     const [emailAddress, setEmailAddress] = useState("");
     useEffect(() => {
         setEmailAddress(`self@${window.location.hostname}`);
@@ -35,9 +35,11 @@ export const FormalProfile = () => {
                 href="https://t.me/lightquantum" target="_blank" rel="noopener">Telegram</A>
             </Paragraph>
             <Paragraph alternative>
-                <p>You may want to read my <A alternative href="#">informal profile (WIP)</A>.</p>
-                <p>Temporary link to my old blog: <A alternative href="https://legacy.lightquantum.me">Old
-                    blog</A>.</p>
+                <p>You may want to read my <A alternative href="#" onClick={(e) => {
+                    e.preventDefault();
+                    toggleProfile();
+                }}>informal profile</A>.
+                </p>
             </Paragraph>
         </>
     )
