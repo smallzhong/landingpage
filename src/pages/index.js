@@ -68,12 +68,17 @@ export default function Home() {
                         <Paragraph>
                             <p>Coding for fun & with ♡.</p>
                             <A href="https://github.com/PhotonQuantum" target="_blank" rel="noopener">GitHub</A> | <A
-                            href="#">Projects
-                            (WIP)</A> | <A href="#">Public Services (WIP)</A>
+                            href="/resume.pdf" target="_blank">Resume</A> | <A href="#">Projects (WIP)</A>
                         </Paragraph>
                         <Paragraph>
                             <p>Learning PL and enhancing SE skills recently.</p>
-                            <A href="#">Notes & thoughts (WIP, zh-Hans)</A>
+                            <p>
+                                Current progress:
+                                reading <A href="https://softwarefoundations.cis.upenn.edu/" target="_blank"
+                                           rel="noopener">SF</A> &
+                                contributing to <A href="https://github.com/tikv/tikv" target="_blank"
+                                                   rel="noopener">TiKV</A>.
+                            </p>
                         </Paragraph>
                         <Paragraph>
                             <p>I love to connect with people.</p>
@@ -84,7 +89,8 @@ export default function Home() {
                         </Paragraph>
                         <ParagraphAlt>
                             <p>You may want to read my <AAlt href="#">informal profile (WIP)</AAlt>.</p>
-                            <p>Temporary link to my old blog: <AAlt href="https://legacy.lightquantum.me">Old blog</AAlt>.</p>
+                            <p>Temporary link to my old blog: <AAlt href="https://legacy.lightquantum.me">Old
+                                blog</AAlt>.</p>
                         </ParagraphAlt>
                     </ParagraphWrapper>
                 </Container>
