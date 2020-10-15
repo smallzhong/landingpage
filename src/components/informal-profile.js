@@ -5,7 +5,7 @@ export const InformalProfile = ({toggleProfile}) => {
     return (
         <>
             <Paragraph>
-                <p>INFP-T | Archlinux | Vim | SHRES | Keyboarder</p>
+                <p>INFP-T | Archlinux | Vim | SHRES | Keyboardist</p>
                 <p>Cognitive functions: Se Ne Ti Fe</p>
             </Paragraph>
             <Paragraph>
