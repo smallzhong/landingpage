@@ -10,7 +10,7 @@ export const FormalProfile = ({toggleProfile}) => {
         <>
             <Paragraph>
                 <p>Major in Computer Science.</p>
-                <p>PL beginner. Former CRUD & frontend developer and ML/DL alchemist.</p>
+                <p>PL beginner. Rustacean, Archer and ML/DL alchemist.</p>
             </Paragraph>
             <Paragraph>
                 <p>Coding for fun & with ♡.</p>
@@ -18,14 +18,7 @@ export const FormalProfile = ({toggleProfile}) => {
                 href="/resume.pdf" target="_blank">Resume</A> | <A href="#">Projects (WIP)</A>
             </Paragraph>
             <Paragraph>
-                <p>Learning PL and enhancing SE skills recently.</p>
-                <p>
-                    Current progress:
-                    reading <A href="https://softwarefoundations.cis.upenn.edu/" target="_blank"
-                               rel="noopener">SF</A> &
-                    contributing to <A href="https://github.com/tikv/tikv" target="_blank"
-                                       rel="noopener">TiKV</A>.
-                </p>
+                <p>Learning PL and enhancing SE skills.</p>
             </Paragraph>
             <Paragraph>
                 <p>I love to connect with people.</p>
