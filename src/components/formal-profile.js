@@ -10,7 +10,7 @@ export const FormalProfile = ({toggleProfile}) => {
         <>
             <Paragraph>
                 <p>Major in Computer Science.</p>
-                <p>PL beginner. Rustacean, Archer and ML/DL alchemist.</p>
+                <p>PL beginner. Rustacean, Archer and former ML/DL alchemist.</p>
             </Paragraph>
             <Paragraph>
                 <p>Coding for fun & with ♡.</p>
