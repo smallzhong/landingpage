@@ -1,4 +1,6 @@
-import tw, {styled} from "twin.macro"
+import tw, {css, styled} from "twin.macro"
+
+export const transBg = css` background: linear-gradient(180deg, #5BCEFA 20%, #F5A9B8 20%, 40%, #FFFFFF 40%, 60%, #F5A9B8 60%, 80%, #5BCEFA 80%); `
 
 export const Root = tw.div`h-screen w-screen flex justify-center items-center dark:bg-gray-900`
 export const Container = tw.div`container flex flex-col`
@@ -11,8 +13,9 @@ export const SummaryTitleAp = tw.div`text-xs md:text-sm text-gray-500 ml-1 md:ml
 export const SummarySubtitleWrapper = tw.div`flex flex-col md:flex-row`
 export const SummarySubtitle = tw.div`text-sm md:text-base text-gray-600 dark:text-gray-400 leading-tight md:leading-normal`
 export const SummarySubtitleAp = tw(SummarySubtitle)`md:ml-1`
-export const AvatarWrapper = tw.div`flex-shrink-0`
-export const Avatar = tw.img`h-16 w-16 rounded-full shadow-lg`
+export const AvatarWrapper = tw.div`flex-shrink-0 relative`
+export const Avatar = tw.img`h-16 w-16 rounded-full shadow`
+export const AvatarFlag = styled.div([transBg, tw`absolute bottom-0 right-0 h-4 w-6 rounded z-20 border-2 border-white shadow`])
 
 export const ParagraphWrapper = tw.div`px-6 pb-6 mx-auto pt-2 md:pt-4 max-w-lg md:max-w-xl`
 export const Paragraph = styled.div(({alternative}) => [

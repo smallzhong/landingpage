@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react"
 import {Helmet} from "react-helmet";
 import {
-    Avatar,
+    Avatar, AvatarFlag,
     AvatarWrapper,
     Container, ParagraphWrapper,
     Root,
@@ -36,6 +36,7 @@ export default function Home() {
                     <SummaryContainer>
                         <AvatarWrapper>
                             <Avatar src="avatar.png"/>
+                            <AvatarFlag />
                         </AvatarWrapper>
                         <SummaryContent>
                             <SummaryTitleWrapper>
