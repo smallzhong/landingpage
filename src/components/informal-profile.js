@@ -10,7 +10,7 @@ export const InformalProfile = ({toggleProfile}) => {
             </Paragraph>
             <Paragraph>
                 <p>I'm willing to share my thoughts and feelings.</p>
-                <A href="https://legacy.lightquantum.me">Blog (zh-Hans, legacy)</A>
+                <A href="https://blog.lightquantum.me">Blog (zh-Hans)</A>
             </Paragraph>
             <Paragraph>
                 <p>I love to connect with people. PMs are welcomed.</p>

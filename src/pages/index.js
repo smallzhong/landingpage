@@ -14,13 +14,6 @@ import {FormalProfile} from "../components/formal-profile";
 import {InformalProfile} from "../components/informal-profile";
 
 export default function Home() {
-    const consoleText = [
-        "Warning. Sedative leak detected.",
-        "TACHYON containment compromised.",
-        "Propulsion system offline.",
-        "Entering M class planet GARDEN's orbit."
-    ];
-    useEffect(() => console.log(consoleText.join("\n")), []);
     const [formal, setFormal] = useState(true);
     const toggleProfile = () => setFormal(!formal);
     return (
