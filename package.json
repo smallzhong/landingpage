@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html"
+    "build": "cp -R ./public/.well-known ./dist/ && parcel build src/index.html"
   },
   "babelMacros": {
     "twin": {
