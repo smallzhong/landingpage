@@ -4,5 +4,6 @@
     "*.pdf": [
       "@parcel/transformer-raw"
     ]
-  }
+  },
+  "reporters": ["...", "parcel-reporter-static-files-copy"]
 }
