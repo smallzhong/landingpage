@@ -26,7 +26,7 @@ export const FormalProfile = ({ toggleProfile }) => {
         <p>Email: <A href={`mailto:${emailAddress}`}>{emailAddress}</A></p>
         <A href="https://twitter.com/LightQuantumhah" target="_blank"
            rel="noopener">Twitter</A> | <A
-        href="https://t.me/lightquantum" target="_blank" rel="noopener">Telegram</A>
+        href="https://t.me/lightquantum_pm_bot" target="_blank" rel="noopener">Telegram</A>
       </Paragraph>
       <Paragraph alternative>
         <p>You may want to read my <A alternative href="#" onClick={(e) => {
