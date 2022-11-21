@@ -2,3 +2,7 @@
   for = "/.well-known/*"
     [headers.values]
     Access-Control-Allow-Origin = "*"
+[[headers]]
+  for = "/.well-known/openpgpkey/hu/*"
+    [headers.values]
+    Content-Type = "application/octet-stream"
