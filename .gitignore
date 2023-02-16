@@ -70,3 +70,6 @@ yarn-error.log
 .idea
 dist
 .parcel-cache
+
+.next/
+/out/
