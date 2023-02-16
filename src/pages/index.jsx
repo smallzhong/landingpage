@@ -37,7 +37,7 @@ export function Home() {
                 <SummaryTitleAp>E53E D56B 7F20 B7BB</SummaryTitleAp>
               </SummaryTitleWrapper>
               <SummarySubtitleWrapper>
-                <SummarySubtitle>CS undergraduate @SJTU-19.</SummarySubtitle>
+                <SummarySubtitle>CS undergraduate @SJTU-20.</SummarySubtitle>
                 <SummarySubtitleAp>Coding with ♡.</SummarySubtitleAp>
               </SummarySubtitleWrapper>
             </SummaryContent>

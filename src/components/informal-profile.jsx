@@ -5,7 +5,7 @@ export const InformalProfile = ({ toggleProfile }) => {
   return (
     <>
       <Paragraph>
-        <p>INFP-T | She/Her | Archlinux | Rustacean | Vim | SHRES | Keyboardist</p>
+        <p>ENFP-T | She/Her | Coq | Rust | SJTUG | Vim | Keyboardist</p>
         <p>Cognitive functions: Se Ne Ti Fe</p>
       </Paragraph>
       <Paragraph>
@@ -18,12 +18,8 @@ export const InformalProfile = ({ toggleProfile }) => {
            rel="noopener">Twitter</A> | <A
         href="https://t.me/lightquantum" target="_blank" rel="noopener">Telegram</A>
       </Paragraph>
-      <Paragraph>
-        <p>Disclaimer: You may be banned if you keep posting racist or sexist comments, or bombarding me with
-          politics.</p>
-      </Paragraph>
       <Paragraph alternative>
-        <p>You may want to read my <A alternative href="#" onClick={(e) => {
+        <p>You may wish to check out my <A alternative href="#" onClick={(e) => {
           e.preventDefault();
           toggleProfile();
         }}>formal profile</A>.
