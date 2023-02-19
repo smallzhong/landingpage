@@ -27,7 +27,8 @@ export default function FormalPage() {
       </a> |&nbsp;
       <a className="link" href={"resume.pdf"} target="_blank">
         Resume
-      </a>
+      </a> |&nbsp;
+      <Link className="link" href="schedule">Schedule</Link>
     </>),
     (<>
       <p>Open to collaboration. Feel free to drop me an Email.</p>
