@@ -22,6 +22,9 @@ export default function SchedulePage() {
           initialView="timeGridWeek"
         />
       </div>
+      <div className={"text-sm text-gray-600 dark:text-gray-300 pt-2"}>
+        If there's no event shown, please wait for a few seconds.
+      </div>
       <Link className={"link align-text-bottom mr-auto pt-2"} href={"../"}>
         Go Back
       </Link>
