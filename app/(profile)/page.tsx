@@ -18,7 +18,7 @@ export default function FormalPage() {
       </p>
       </>),
     (<p>
-      Research interests: program verification, formal methods, compiler correctness.
+      Research interests: programming language, formal verification, program analysis
     </p>),
     (<>
       <p>Coding for fun & with ♡.</p>
@@ -31,7 +31,7 @@ export default function FormalPage() {
       <Link className="link" href="schedule">Schedule</Link>
     </>),
     (<>
-      <p>Open to collaboration. Feel free to drop me an Email.</p>
+      <p>Actively seeking for internship opportunities.</p>
       <p>Email: <MailTo /></p>
       <a className="link" href="https://twitter.com/LightQuantumhah" target="_blank" rel="noopener">
         Twitter

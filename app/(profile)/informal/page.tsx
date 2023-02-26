@@ -8,10 +8,6 @@ export default function InformalPage() {
       <p>Enjoy developing open-source projects, playing digital synthesizers.</p>
     </>),
     (<>
-      <p>I'm willing to share my thoughts and feelings.</p>
-      <a className="link" href="https://blog.lightquantum.me">Blog (zh-Hans)</a>
-    </>),
-    (<>
       <p>I love to connect with people. PMs are welcomed.</p>
       <a className="link" href="https://twitter.com/LightQuantumhah" target="_blank" rel="noopener">
         Twitter
