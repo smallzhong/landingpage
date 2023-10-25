@@ -5,18 +5,25 @@ import Link from "next/link";
 export default function FormalPage() {
   const paragraphs = [
     (
-      <p>A junior undergraduate student major in Computer Science.</p>
+      <p>A senior undergraduate student major in Computer Science.</p>
     ),
     (<>
-      <p>PL beginner with some software engineering experience.</p>
-      <p>Working with&nbsp;
+      <p>PL researcher with some software engineering experience.</p>
+      <p>Interning with&nbsp;
+        <a className="link" href="https://fredfeng.github.io/">
+          Yu Feng
+        </a> at <a className="link" href="https://www.cs.ucsb.edu/">
+          CS@UCSB
+        </a>
+      </p>
+      <p>Previously worked with&nbsp;
         <a className="link" href="https://jhc.sjtu.edu.cn/people/members/faculty/qinxiang-cao.html">
           Qinxiang Cao
         </a> at <a className="link" href="https://jhc.sjtu.edu.cn">
           JHC@SJTU
-        </a>
+        </a>, will continue to work with him after the internship ends.
       </p>
-      </>),
+    </>),
     (<p>
       Research interests: programming language, formal verification, program analysis
     </p>),
@@ -31,7 +38,7 @@ export default function FormalPage() {
       <Link className="link" href="schedule">Schedule</Link>
     </>),
     (<>
-      <p>Actively seeking for internship opportunities.</p>
+      <p>Applying for PhD programs.</p>
       <p>Email: <MailTo /></p>
       <a className="link" href="https://twitter.com/LightQuantumhah" target="_blank" rel="noopener">
         Twitter
