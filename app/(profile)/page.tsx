@@ -33,6 +33,9 @@ export default function FormalPage() {
     (<>
       <p>Actively seeking for internship opportunities.</p>
       <p>Email: <MailTo /></p>
+      <a className="link" href="https://twitter.com/LightQuantumhah" target="_blank" rel="noopener">
+        Twitter
+      </a> |&nbsp;
       <a className="link" href="https://t.me/lightquantum_pm_bot" target="_blank" rel="noopener">
         Telegram
       </a>
