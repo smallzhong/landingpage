@@ -22,7 +22,29 @@ const nextConfig = {
     });
 
     return config;
-  }
+  },
+  async headers() {
+    return [
+      {
+        source: '/.well-known/(.*)',
+        headers: [
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*',
+          }
+        ],
+      },
+      {
+        source: '/.well-known/openpgpkey/hu/(.*)',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/octet-stream',
+          }
+        ],
+      },
+    ]
+  },
 };
 
 const withMDX = createMDX({
