@@ -1,4 +1,4 @@
-import Avatar from "../../public/new.jpg";
+import Avatar from "./avatar.jpg";
 import Image from "next/image";
 import React, { Fragment } from "react";
 import ActiveLink from "../../components/ActiveLink";
