@@ -6,13 +6,34 @@
     .link {
         @apply hover:underline text-blue-600 dark:text-blue-300;
     }
+
     .link .alt {
         @apply hover:underline text-blue-500 dark:text-blue-400;
+    }
+
+    .markdown {
+        @apply prose prose-sm md:prose-base dark:prose-invert
+        prose-a:text-blue-600 dark:prose-a:text-blue-300
+        prose-p:first:mt-0
+        prose-ul:my-0 prose-ol:my-0 prose-li:my-0
+        max-w-none;
+    }
+
+    .markdown p:has(+ ul) {
+        @apply mb-0;
+    }
+
+    .markdown p:has(+ ol) {
+        @apply mb-0;
     }
 }
 
 @layer utilities {
     .trans-bg {
         background: linear-gradient(180deg, #5BCEFA 20%, #F5A9B8 20%, 40%, #FFFFFF 40%, 60%, #F5A9B8 60%, 80%, #5BCEFA 80%);
+    }
+
+    .text-strong {
+        @apply text-black dark:text-white;
     }
 }
