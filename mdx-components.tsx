@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "next/image";
 import type { MDXComponents } from "mdx/types"
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
@@ -6,7 +7,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     it: (props) => <em {...props} />,
     em: (props) => <em className="text-strong" {...props} />,
     dcenter: (props) => <div className="text-center" {...props} />,
-    // a: (props) => <a className="link" {...props} />,
+    Image: (props) => <Image {...props} />,
     ...components
   }
 }

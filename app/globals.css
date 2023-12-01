@@ -4,27 +4,21 @@
 
 @layer components {
     .link {
-        @apply hover:underline text-blue-600 dark:text-blue-300;
+        @apply text-strong hover:text-strong-inv bg-link hover:bg-link-focused
+        transition-all ease-in-out duration-100 hover:duration-200;
     }
 
-    .link .alt {
-        @apply hover:underline text-blue-500 dark:text-blue-400;
+    .link-selected {
+        @apply text-strong-inv bg-link bg-link-selected
     }
 
     .markdown {
         @apply prose prose-sm md:prose-base dark:prose-invert
-        prose-a:text-blue-600 dark:prose-a:text-blue-300
-        prose-p:first:mt-0
-        prose-ul:my-0 prose-ol:my-0 prose-li:my-0
-        max-w-none;
+        prose-ul:mt-0 prose-ol:my-0 prose-li:my-0
     }
 
-    .markdown p:has(+ ul) {
-        @apply mb-0;
-    }
-
-    .markdown p:has(+ ol) {
-        @apply mb-0;
+    .markdown p, .markdown h3 {
+        @apply first-of-type:mt-0
     }
 }
 
@@ -35,5 +29,25 @@
 
     .text-strong {
         @apply text-black dark:text-white;
+    }
+
+    .text-strong-inv {
+        @apply text-white dark:text-black;
+    }
+
+    .bg-link {
+        @apply bg-[size:100%_170%] bg-gradient-to-b from-50% from-transparent to-50% to-ctp-mauve
+    }
+
+    .bg-link-focused {
+        @apply bg-[0_100%]
+    }
+
+    .bg-link-selected {
+        @apply bg-[0_100%]
+    }
+
+    .bg-background {
+        @apply bg-gradient-to-br from-ctp-base to-ctp-crust
     }
 }

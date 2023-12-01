@@ -3,9 +3,15 @@ import remarkDirectiveRehype from "remark-directive-rehype";
 import remarkGfm from "remark-gfm";
 import createMDX from "@next/mdx";
 
+const buildDate = new Date();
+const buildDateString = `${buildDate.getUTCFullYear()}/${buildDate.getUTCMonth() + 1}/${buildDate.getUTCDate()}`;
+
 /** @type {import("next").NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+  env: {
+    lastUpdate: buildDateString,
+  },
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.pdf/,
