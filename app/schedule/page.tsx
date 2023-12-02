@@ -3,7 +3,6 @@
 import FullCalendar from "@fullcalendar/react";
 import iCalendarPlugin from "@fullcalendar/icalendar";
 import timeGridPlugin from "@fullcalendar/timegrid";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const calendars = [

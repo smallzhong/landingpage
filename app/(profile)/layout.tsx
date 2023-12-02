@@ -72,7 +72,6 @@ export default function ProfileLayout({ children }) {
             </p>
             <p>
               Last updated on {process.env.lastUpdate}.
-              {/*Last updated on {process.env.lastUpdate}.*/}
             </p>
           </div>
         </div>

@@ -12,7 +12,7 @@ const nextConfig = {
   env: {
     lastUpdate: buildDateString,
   },
-  webpack: (config, options) => {
+  webpack: (config) => {
     config.module.rules.push({
       test: /\.pdf/,
       type: "asset/resource",
