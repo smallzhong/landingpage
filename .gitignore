@@ -73,3 +73,5 @@ dist
 
 .next/
 /out/
+.vercel/
+.wrangler/

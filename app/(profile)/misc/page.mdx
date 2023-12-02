@@ -1,3 +1,6 @@
+import { Timeline } from "../../../components/Timeline";
+import { Suspense } from "react";
+
 ### Coding Languages
 
 My personal views on languages I've used (or not).
@@ -12,3 +15,10 @@ My personal views on languages I've used (or not).
 8. **HTML/CSS/JS** - I use them each time I need to update my website or write a GUI.
 9. **Visual Basic** - My first programming language. Look! It has effect handlers! (Just kidding. I'm not sure whether "err: Resume Next"s are true effect handlers.)
 
+### Random Ideas
+
+<Suspense fallback={<p>Loading...</p>}>
+  <div className="not-prose">
+    <Timeline id="1727578673375760384" />
+  </div>
+</Suspense>

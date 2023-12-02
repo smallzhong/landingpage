@@ -20,6 +20,18 @@
     .markdown p, .markdown h3 {
         @apply first-of-type:mt-0
     }
+
+    .tweet span, .tweet a {
+        @apply text-sm md:text-base leading-tight md:leading-tight
+    }
+
+    .tweet span {
+        @apply block
+    }
+
+    .tweet-info a {
+        @apply mt-1 text-xs md:text-sm text-ctp-subtext0
+    }
 }
 
 @layer utilities {
