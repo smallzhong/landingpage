@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS timeline
 (
     user        TEXT    NOT NULL,
     inserted_at INTEGER NOT NULL,
-    tweet_id    INTEGER NOT NULL UNIQUE
+    tweet_id    TEXT NOT NULL UNIQUE
 );
 CREATE INDEX IF NOT EXISTS timeline_user_inserted_at_idx ON timeline (user, inserted_at);
 
