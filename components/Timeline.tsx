@@ -6,8 +6,8 @@ import { ErrorBoundary } from "next/dist/client/components/error-boundary";
 export const Timeline = async ({ id }: { id: string }) => {
   const host = headers().get("host");
   const protocol = process?.env.NODE_ENV === "development" ? "http" : "https";
-  try{
-    const tweetIds: string[] = await (await fetch(`${protocol}://${host}/api/tweet-ids?user=${id}`, { cache: "no-cache" })).json();
+  try {
+    const tweetIds: string[] = await (await fetch(`${protocol}://${host}/api/tweet-ids?user=${id}`, { next: { revalidate: 1800 } })).json();
     return (
       <div className="flex flex-col space-y-6">
         {tweetIds.map((tweetId, i) => (
@@ -18,10 +18,9 @@ export const Timeline = async ({ id }: { id: string }) => {
         ))}
       </div>
     );
-  }
-  catch (e) {
+  } catch (e) {
     return (
       <p className="text-ctp-red">! Failed to load timeline</p>
-    )
+    );
   }
 };
