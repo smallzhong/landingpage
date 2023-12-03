@@ -59,15 +59,14 @@ const withMDX = createMDX({
 
 import { setupDevBindings } from "@cloudflare/next-on-pages/__experimental__next-dev";
 
-// TODO note that you must remove this for oauth to work
 // we only need to use the utility during development so we can check NODE_ENV
 // (note: this check is recommended but completely optional)
-if (process.env.NODE_ENV === "development") {
+if (process.env.NODE_ENV === "development" && !process.env.SKIP_CF_BINDINGS) {
   // we call the utility with the bindings we want to have access to
   setupDevBindings({
     d1Databases: {
       "DB_TWEET": "7116ce7a-eff4-4de8-95cc-7263c2356a6a"
-    },
+    }
   });
 }
 

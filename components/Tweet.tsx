@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { getTweet } from "react-tweet/api";
-import { type TweetProps, TweetNotFound, TweetSkeleton } from "react-tweet";
+import { type TweetProps, TweetSkeleton } from "react-tweet";
 import { TweetBase } from "./TweetBase";
 
 const TweetContent = async ({ id, components, onError }: TweetProps) => {
@@ -15,8 +15,7 @@ const TweetContent = async ({ id, components, onError }: TweetProps) => {
     : undefined;
 
   if (!tweet) {
-    const NotFound = components?.TweetNotFound || TweetNotFound;
-    return <p className="text-ctp-red">Tweet not found</p>;
+    return <p className="text-error">Tweet not found</p>;
   }
 
   return <TweetBase tweet={tweet} components={components} />;

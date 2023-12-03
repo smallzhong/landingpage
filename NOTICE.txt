@@ -1,0 +1,2 @@
+All rights reserved for images, documents, slides, PDFs, MDXs, and all files under `public`.
+The rest of the code is licensed under MIT.

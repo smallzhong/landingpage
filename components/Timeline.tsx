@@ -13,14 +13,14 @@ export const Timeline = async ({ id }: { id: string }) => {
         {tweetIds.map((tweetId, i) => (
           <Fragment key={tweetId}>
             <Tweet id={tweetId} fallback={<p>Loading...</p>} />
-            {i < tweetIds.length - 1 && <hr className="border-ctp-overlay0" />}
+            {i < tweetIds.length - 1 && <hr className="border-label" />}
           </Fragment>
         ))}
       </div>
     );
   } catch (e) {
     return (
-      <p className="text-ctp-red">! Failed to load timeline</p>
+      <p className="text-error">! Failed to load timeline</p>
     );
   }
 };

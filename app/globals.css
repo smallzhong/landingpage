@@ -30,7 +30,7 @@
     }
 
     .tweet-info a {
-        @apply mt-1 text-xs md:text-sm text-ctp-subtext0
+        @apply mt-1 text-xs md:text-sm text-label
     }
 }
 
@@ -40,6 +40,7 @@
     }
 
     .text-strong {
+        /* THEME: custom em text style */
         @apply text-black dark:text-white;
     }
 
@@ -48,6 +49,7 @@
     }
 
     .bg-link {
+        /* THEME: custom nav link style */
         @apply bg-[size:100%_170%] bg-gradient-to-b from-50% from-transparent to-50% to-ctp-mauve
     }
 
@@ -59,7 +61,33 @@
         @apply bg-[0_100%]
     }
 
+    /* THEME: start of custom styles */
+
     .bg-background {
-        @apply bg-gradient-to-br from-ctp-base to-ctp-crust
+        @apply bg-gradient-to-br from-ctp-base to-ctp-crust bg-ctp-base
+    }
+
+    .text-label {
+        @apply text-ctp-subtext0
+    }
+
+    .text-label2 {
+        @apply text-ctp-subtext1
+    }
+
+    .text-accent {
+        @apply text-ctp-mauve
+    }
+
+    .text-error {
+        @apply text-ctp-red
+    }
+
+    .text-normal {
+        @apply text-ctp-text
+    }
+
+    .border-label {
+        @apply border-ctp-subtext0
     }
 }

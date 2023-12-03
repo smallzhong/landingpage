@@ -35,11 +35,11 @@ export default function ProfileLayout({ children }) {
             <div className="text-xl md:text-2xl text-strong leading-tight pb-1 rn">
               Yanning Chen
             </div>
-            <div className="text-xs md:text-sm text-ctp-subtext0 whitespace-nowrap">
+            <div className="text-xs md:text-sm text-label whitespace-nowrap">
               E53E D56B 7F20 B7BB
             </div>
           </div>
-          <div className="text-sm md:text-base text-ctp-subtext0 leading-tight md:leading-normal">
+          <div className="text-sm md:text-base text-label leading-tight md:leading-normal">
             {
               pages.map(({ name, href }, i) => (
                 <Fragment key={i}>
@@ -49,24 +49,15 @@ export default function ProfileLayout({ children }) {
               ))
             }
           </div>
-          {/*<div className="flex flex-col md:flex-row">*/}
-          {/*  <div className="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-tight md:leading-normal">*/}
-          {/*    CS undergraduate @SJTU-20.*/}
-          {/*  </div>*/}
-          {/*  <div*/}
-          {/*    className="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-tight md:leading-normal md:ml-1">*/}
-          {/*    Coding with ♡.*/}
-          {/*  </div>*/}
-          {/*</div>*/}
         </div>
       </div>
       <div className="flex flex-col mb-auto px-6 pb-6 mx-auto">
         <div className="markdown">
           {children}
         </div>
-        <div className="mt-8 max-w-3xl text-xs md:text-sm text-ctp-overlay0 text-center flex flex-col sm:flex-row">
+        <div className="mt-8 max-w-3xl text-xs md:text-sm text-label text-center flex flex-col sm:flex-row">
           <p className="sm:mr-auto">
-            Designed by myself <a className="underline text-ctp-mauve"
+            Designed by myself <a className="underline text-accent"
                                   href="https://github.com/PhotonQuantum/landingpage">[1]</a>.
           </p>
           <p>

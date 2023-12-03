@@ -14,8 +14,8 @@ export default function SchedulePage() {
   const router = useRouter();
   return (
     <>
-      <div className="text-2xl text-ctp-text">Schedule</div>
-      <div className={"flex-grow text-ctp-text"}>
+      <div className="text-2xl text-normal">Schedule</div>
+      <div className={"flex-grow text-normal"}>
         <FullCalendar
           height={"100%"}
           plugins={[timeGridPlugin, iCalendarPlugin]}
@@ -23,7 +23,7 @@ export default function SchedulePage() {
           initialView="timeGridWeek"
         />
       </div>
-      <div className={"text-sm text-ctp-subtext0 pt-2"}>
+      <div className={"text-sm text-label pt-2"}>
         If there's no event shown, please wait for a few seconds.
       </div>
       <a className={"link cursor-pointer align-text-bottom mr-auto pt-2"} onClick={router.back}>

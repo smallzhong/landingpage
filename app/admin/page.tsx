@@ -30,7 +30,7 @@ export default function AdminPage() {
         session &&
         (allowedUsers.includes(id) ?
           <a className="cursor-pointer" onClick={updateToken}>Update Token</a> :
-          <p className="text-ctp-red">This user is not in the allowed list.</p>)
+          <p className="text-error">This user is not in the allowed list.</p>)
       }
     </>
   );
