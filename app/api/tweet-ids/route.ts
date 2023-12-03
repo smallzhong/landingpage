@@ -29,7 +29,6 @@ const authUser = async (db: D1Database, user: string): Promise<string> => {
   } = await db.prepare("SELECT access_token, refresh_token, expires_at FROM auth WHERE name = ?").bind(user).first();
   let current_timestamp = Math.floor(Date.now() / 1000);
   if ((expires_at as number) < current_timestamp - 60) {
-    console.log("refreshing token");
     const basicAuth = btoa(`${process.env.TWITTER_CLIENT_ID}:${process.env.TWITTER_CLIENT_SECRET}`);
     const resp = await fetch("https://api.twitter.com/2/oauth2/token", {
       method: "POST",
@@ -73,7 +72,6 @@ export async function GET(req: NextRequest) {
   const count = req.nextUrl.searchParams.get("count") || 10;
   const db = process.env.DB_TWEET;
   if (await needUpdate(db, user)) {
-    console.log("tweet update triggered");
     await updateLatestTweet(db, user);
   }
   const { results } = await db.prepare(`SELECT tweet_id

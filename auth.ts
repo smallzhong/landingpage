@@ -15,7 +15,6 @@ export const { handlers: { GET, POST }, auth } = NextAuth({
       return { account: { access_token, refresh_token, expires_at, id: token.sub }, ...session };
     },
     jwt: async ({ token, user, account, profile }) => {
-      console.log("jwt", { token, user, account, profile });
       return { account, ...token };
     }
   }
