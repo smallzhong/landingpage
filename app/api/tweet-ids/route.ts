@@ -43,7 +43,7 @@ const authUser = async (db: D1Database, user: string): Promise<string> => {
       cache: "no-cache"
     });
     const { access_token, refresh_token, expires_in } = await resp.json();
-    let current_timestamp = new Date().getTime();
+    let current_timestamp = Math.floor(Date.now() / 1000);
     const stmt = db.prepare("UPDATE auth SET access_token = ?, refresh_token = ?, expires_at = ? WHERE name = ?")
       .bind(access_token, refresh_token, current_timestamp + expires_in, user);
     await stmt.run();
