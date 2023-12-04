@@ -76,8 +76,9 @@ export async function GET(req: NextRequest) {
   }
   const { results } = await db.prepare(`SELECT tweet_id
                                         FROM timeline
+                                        WHERE user = ?
                                         ORDER BY inserted_at DESC
-                                        LIMIT ${count}`).all();
+                                        LIMIT ?`).bind(user, count).all();
   const tweets = results.map(({ tweet_id }) => tweet_id);
   return NextResponse.json(tweets);
 }
